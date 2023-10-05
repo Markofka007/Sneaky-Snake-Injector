@@ -22,7 +22,7 @@ if __name__ == "__main__":
     input_file = input("Enter the path of the input Python file: ")
     if os.path.exists(input_file):
         output_lines = create_startup_script(input_file)
-        with open('C:\\Users\\marko\\Desktop\\output.txt', 'w') as output_file:
+        with open('output.txt', 'w') as output_file:
             output_file.write('\n'.join(head))
             output_file.write('\n'.join(output_lines))
             output_file.write('\n'.join(tail))
